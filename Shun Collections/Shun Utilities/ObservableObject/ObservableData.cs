@@ -26,7 +26,7 @@ namespace ShunCollection.Shun_Utilities.ObservableObject
             }
         }
 
-        public Action<T,T> OnValueChanged { get; protected set; } = delegate { };
+        public Action<T,T> OnValueChanged { get; set; } = delegate { };
 
         public ObservableData(T value)
         {
